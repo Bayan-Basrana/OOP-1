@@ -41,7 +41,7 @@ public class Account {
         return balance;
     }
 
-    public void credit (int amount){
+    public void debit (int amount){
         if(getBalance()==0)
             System.out.println(" your balance is zero ");
         else if (getBalance()< amount) {
@@ -53,7 +53,7 @@ public class Account {
         }
     }
 
-    public void debit (int amount){
+    public void credit (int amount){
         if (amount<=0){
             System.out.println(" invalided ");}
         else {
