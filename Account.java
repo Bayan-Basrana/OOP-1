@@ -65,7 +65,7 @@ public class Account {
         if (getBalance()< amount){
             System.out.println(" the balance is less than the amount");}
         else
-            another.debit(amount);
+            another.credit(amount);
     }
 
     public String toString() {
