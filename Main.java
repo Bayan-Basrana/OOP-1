@@ -34,15 +34,15 @@ employee2.setSalary(25000);
 
         System.out.println(account1.toString());
         System.out.println(account2.toString());
-//try to credit empty balance
-        account1.credit(1000);
-        System.out.println("the balance in "+ account1.getName()+ " account after credit " +account1.getBalance());
-// now add 1000 to the bayan account
-        account1.debit(2000);
+//try to debit empty balance
+        account1.debit(1000);
         System.out.println("the balance in "+ account1.getName()+ " account after debit " +account1.getBalance());
-        // now I will try credit
-        account1.credit(1000);
+// now add 1000 to the bayan account
+        account1.credit(2000);
         System.out.println("the balance in "+ account1.getName()+ " account after credit " +account1.getBalance());
+        // now I will try debit
+        account1.debit(1000);
+        System.out.println("the balance in "+ account1.getName()+ " account after debit " +account1.getBalance());
 
 // transfer from account Ahmed to account bayan
         account2.transferTo(account1, 500);
